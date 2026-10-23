@@ -1,4 +1,4 @@
-1. **`requirements.txt`** — Add all required libraries such as LangGraph, LangChain OpenAI, Pinecone, Tavily, FastAPI, SQLite LangGraph checkpointer, document loaders, etc.
+1. **`requirements.txt `** — Add all required libraries such as LangGraph, LangChain OpenAI, Pinecone, Tavily, FastAPI, SQLite LangGraph checkpointer, document loaders, etc.
 
 2. **`.env`** — Configure OpenAI API key, OpenAI LLM model, `text-embedding-3-large`, Pinecone API key/index/namespace, Tavily API key, and other environment settings.
 
