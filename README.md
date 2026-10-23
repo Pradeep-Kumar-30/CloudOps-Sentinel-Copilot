@@ -215,31 +215,7 @@ For the second message, the `contextualize` node uses the persisted incident con
 
 SQLite is intentionally used for the local demonstration. In a production implementation, you can explain that this persistence layer can be replaced with PostgreSQL or another production-grade LangGraph checkpointer/database.
 
-## Recommended YouTube flow
 
-### Demo A — Existing Pinecone knowledge
-
-Ask:
-
-> Our checkout API is returning 502 errors after deployment. What should the on-call engineer check first?
-
-Expected route: **Private Runbooks**.
-
-### Demo B — Persistent memory
-
-Immediately ask:
-
-> What should I check next if that does not work?
-
-The same `thread_id` should reuse the previous incident context.
-
-### Demo C — Upload new operational knowledge
-
-Upload a new PDF/MD/DOCX from the UI. The status will show how many chunks were added to the existing namespace. Then ask a question whose answer exists only in the newly uploaded document.
-
-### Demo D — Internet-search fallback
-
-Ask about a technical issue that is not covered by any private runbook. Self-RAG first tries the private KB, grades the evidence, rewrites if necessary, and then transitions to **Internet Search** when internal evidence remains insufficient.
 
 ## Important configuration rule
 
