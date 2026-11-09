@@ -12,3 +12,6 @@ env
 .pytest_cache
 tests
 *.log
+data/*.db
+data/*.sqlite*
+uploads/*

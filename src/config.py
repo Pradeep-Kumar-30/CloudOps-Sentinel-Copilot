@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parent.parent
 class Settings(BaseModel):
     # OpenAI
     openai_api_key: str = os.getenv("OPENAI_API_KEY", "")
-    openai_model: str = os.getenv("OPENAI_MODEL", "gpt-5-mini")
+    openai_model: str = os.getenv("OPENAI_MODEL") or os.getenv("OPEN_MODEL") or "gpt-5-mini"
     embedding_model: str = os.getenv("EMBEDDING_MODEL", "text-embedding-3-large")
     embedding_dimension: int = int(os.getenv("EMBEDDING_DIMENSION", "3072"))
 
